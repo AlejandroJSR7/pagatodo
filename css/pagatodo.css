@@ -548,6 +548,9 @@ footer {
 .c_gray {
   color: #575757 !important;
 }
+.c_gray2 {
+  color: #797979 !important;
+}
 .hidden {
   display: none;
 }
@@ -585,6 +588,18 @@ footer {
 .col-6 {
   float: left;
   width: 50%;
+}
+.bg--green {
+  background: #489328 !important;
+}
+.bg--blue {
+  background: #0f2d7d !important;
+}
+.bg--blue2 {
+  background: #174baa !important;
+}
+.bg--red {
+  background: #fd2415 !important;
 }
 @font-face {
   font-family: 'ArialNarrow';
@@ -3776,6 +3791,7 @@ h6,
   border: 1px solid #797979;
   border-radius: 5px;
   color: #797979;
+  cursor: pointer;
   display: inline-block;
   font-family: 'ArialNarrow';
   font-size: 13px;
@@ -3809,6 +3825,7 @@ h6,
   appearance: none;
   background: transparent;
   border: none;
+  cursor: pointer;
   padding-bottom: 5px;
   padding-left: 5px;
   padding-top: 5px;
@@ -3816,6 +3833,37 @@ h6,
 }
 .icon-svg img {
   diplay: block;
+}
+.arrow-open-or-close {
+  background-image: url("../images/design/icons/icons-pagatodo.png");
+  background-position: 3px -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 21px;
+}
+.arrow-open-or-close.active {
+  background-position: 3px 2px;
+}
+.calendar-icon {
+  background-image: url("../images/design/icons/icons-pagatodo.png");
+  background-position: 0 -35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+.calendar-icon.red {
+  background-position: 0 -70px;
 }
 .slick-slider {
   display: block;
@@ -4791,6 +4839,14 @@ input {
 }
 .banner.banner-lottery.banner-fixed {
   background: url("../images/background/banner-lottery.jpg") 50% 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.banner.banner-resultados {
+  padding: 150px 0;
+}
+.banner.banner-resultados.banner-fixed {
+  background: url("../images/background/banner-resultados.png") 50% 50% no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -6391,4 +6447,173 @@ footer .submenu-footer li:last-child:after {
 }
 #back-to-top.show {
   opacity: 1;
+}
+.results-banner {
+  border: none;
+}
+.results-banner:before,
+.results-banner:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  height: 0;
+}
+.results-banner:after {
+  clear: both;
+}
+.result-banner {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33%;
+}
+.tabla-de-resultados {
+  border: none;
+}
+.tabla-de-resultados__titulo {
+  background: #575757;
+  color: #fff;
+  line-height: 15px;
+  line-height: 1em;
+  padding: 10px 15px;
+  position: relative;
+}
+.tabla-de-resultados__titulo h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.tabla-de-resultados__tabla {
+  border: none;
+}
+.tabla-de-resultados__tabla__header {
+  background: #f5f5f5;
+  padding: 20px 15px 5px;
+}
+.tabla-de-resultados__tabla__header:before,
+.tabla-de-resultados__tabla__header:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  height: 0;
+}
+.tabla-de-resultados__tabla__header:after {
+  clear: both;
+}
+.tabla-de-resultados__tabla__header h3 {
+  display: inline-block;
+  float: left;
+  font-family: 'MontserratBold';
+  font-size: 18px;
+  margin: 5px 50px 5px 0;
+  text-transform: uppercase;
+  width: auto;
+}
+.tabla-de-resultados__tabla__header .calendar-icon {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.tabla-de-resultados__tabla__header .date-input {
+  display: inline-block;
+  float: right;
+  font-family: 'ArialNarrow';
+}
+.tabla-de-resultados__tabla__header .date-input:before,
+.tabla-de-resultados__tabla__header .date-input:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  height: 0;
+}
+.tabla-de-resultados__tabla__header .date-input:after {
+  clear: both;
+}
+.tabla-de-resultados__tabla__header .date-input input {
+  background: #fff;
+  color: #797979;
+  height: 35px;
+  padding: 10px 10px;
+  vertical-align: top;
+}
+.tabla-de-resultados__tabla__header .custom-select {
+  float: right;
+  margin: 0;
+  margin-left: 20px;
+  padding: 5px 10px;
+  width: 200px;
+}
+.tabla-de-resultados__tabla table {
+  background: #f5f5f5;
+  border: none;
+  font-family: 'ArialNarrow';
+  font-weight: 300;
+  padding: 10px;
+  width: 100%;
+}
+.tabla-de-resultados__tabla table thead {
+  background: #e8e8e8;
+}
+.tabla-de-resultados__tabla table thead tr th {
+  color: #575757;
+  padding: 10px 0px;
+}
+.tabla-de-resultados__tabla table thead tr th span {
+  margin: 10px 5px;
+}
+.tabla-de-resultados__tabla table thead tr th:first-child span {
+  margin-left: 0;
+}
+.tabla-de-resultados__tabla table thead tr th:last-child span {
+  margin-right: 0;
+}
+.tabla-de-resultados__tabla table tbody tr td {
+  color: #797979;
+}
+.tabla-de-resultados__tabla table tbody tr td span {
+  background: #fff;
+  display: block;
+  margin: 10px 5px 0;
+  padding: 10px 10px;
+}
+.tabla-de-resultados__tabla table tbody tr td:first-child {
+  text-align: center;
+}
+.tabla-de-resultados__tabla table tbody tr td:first-child span {
+  margin-left: 0;
+}
+.tabla-de-resultados__tabla table tbody tr td:first-child img {
+  height: 55px;
+  max-width: 98px;
+}
+.tabla-de-resultados__tabla table tbody tr td:last-child {
+  text-align: center;
+}
+.tabla-de-resultados__tabla table tbody tr td:last-child span {
+  margin-right: 0;
+}
+.tabla-de-resultados__tabla.tabla-con-logos table tbody tr td span {
+  padding: 20px 20px;
+}
+.tabla-de-resultados__tabla.tabla-con-logos table tbody tr td:first-child {
+  padding: 5px 20px;
+  width: 110px;
+}
+.tabla-de-resultados__tabla.tabla-con-logos table tbody tr td:first-child span {
+  background: transparent;
+}
+.tabla-de-resultados__tabla.tabla-con-logos table tbody tr td:first-child img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn-premio-seco {
+  font-family: 'ArialNarrow';
+  font-size: 14px;
+  padding: 10px 15px;
+  text-transform: initial;
 }
