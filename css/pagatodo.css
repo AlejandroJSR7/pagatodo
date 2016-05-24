@@ -676,6 +676,9 @@ p {
   font-family: 'ArialNarrow';
   font-size: 16px;
 }
+hr {
+  border-top: 1px solid #e8e8e8;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -6616,4 +6619,80 @@ footer .submenu-footer li:last-child:after {
   font-size: 14px;
   padding: 10px 15px;
   text-transform: initial;
+}
+.premios-seco-logo img {
+  width: 156px;
+}
+.simple-table {
+  color: #797979;
+  font-family: 'ArialNarrow';
+  margin-bottom: 20px;
+  text-align: center;
+}
+.simple-table strong {
+  color: #575757;
+  font-family: 'MontserratBold';
+  font-weight: normal;
+}
+.simple-table table {
+  width: 100%;
+}
+.simple-table table th {
+  border-top: 1px solid #e8e8e8;
+  color: #575757;
+  font-family: 'MontserratBold';
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding: 20px 10px 25px;
+  position: relative;
+}
+.simple-table table th:before {
+  background: #e8e8e8;
+  content: " ";
+  display: block;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+}
+.simple-table table th:after {
+  background: #e8e8e8;
+  bottom: 10px;
+  content: " ";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.simple-table table th:last-child:before {
+  display: none;
+}
+.simple-table table td {
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 16px;
+  padding: 10px 0;
+  position: relative;
+}
+.simple-table table td:after {
+  background: #e8e8e8;
+  content: " ";
+  display: block;
+  height: 70%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1px;
+}
+.simple-table table tbody tr:first-child td {
+  border-top: 1px solid #e8e8e8;
+}
+.simple-table table tbody tr td:last-child:after {
+  display: none;
 }
