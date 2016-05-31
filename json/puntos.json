@@ -1,0 +1,72 @@
+{
+  "ventas": {
+    "name": "Puntos de venta",
+    "icon": "images/place-rojo.png",
+    "color": "red",
+    "locations": [
+      {
+        "name": "La Esperanza",
+        "address": "Cl 24a # 68c-56 lc 14",
+        "city": "Bogotá",
+        "lat": 4.70249,
+        "lng": -74.041336
+      },
+      {
+        "name": "Versalles",
+        "address": "Cr 111 # 23a-91 lc 102",
+        "city": "Bogotá",
+        "lat": 4.697443,
+        "lng": -74.041336
+      },
+      {
+        "name": "El muelle",
+        "address": "Cr 113b # 63i-39",
+        "city": "Bogotá",
+        "lat": 4.697443,
+        "lng": -74.041336
+      }
+    ]
+  },
+  "satelites": {
+    "name": "Satélites",
+    "icon": "images/place-azul.png",
+    "color": "blue",
+    "locations": [
+      {
+        "name": "Satélite 1",
+        "address": "Calle Satélite 1",
+        "city": "Bogotá",
+        "lat": 4.716861,
+        "lng": -74.043696
+      },
+      {
+        "name": "Satélite 2",
+        "address": "Calle Satélite 2",
+        "city": "Bogotá",
+        "lat": 4.688376,
+        "lng": -74.040091
+      }
+    ]
+  },
+  "cajas": {
+    "name": "Cajas",
+    "icon": "images/place-verde.png",
+    "color": "green",
+    "locations": [
+      {
+        "name": "Fontibon centro",
+        "address": "Av ferrocarril # 99-25",
+        "city": "Bogotá",
+        "lat": 4.693893,
+        "lng": -74.053653
+      },
+      {
+        "name": "Caja 2",
+        "address": "Calle Caja 2",
+        "city": "Bogotá",
+        "lat": 4.685767,
+        "lng": -74.048503
+      }
+    ]
+  }
+}
