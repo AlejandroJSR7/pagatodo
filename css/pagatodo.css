@@ -7115,6 +7115,9 @@ input {
 .premios-header .title-line {
   margin-right: 2em;
 }
+.premios-header .title-line img {
+  width: 135px;
+}
 .premios-header .info-header {
   font-size: 0.8em;
   font-weight: bold;
@@ -7790,6 +7793,34 @@ footer .submenu-footer li:after {
 footer .submenu-footer li:last-child:after {
   display: none;
 }
+.site-map-link-temporal {
+  background: #fff;
+  border: 1px solid #4a87c6;
+  bottom: 10%;
+  font-size: 12px;
+  color: #4a87c6;
+  display: block;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-align: center;
+  z-index: 9999;
+}
+.site-map-link-temporal .icon.icon-cancel {
+  background: #fff;
+  border: 1px solid #4a87c6;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  line-height: 13px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+}
+.site-map-link-temporal .icon.icon-cancel:before {
+  margin: 0;
+}
 .search-result-title {
   padding: 30px 0;
   position: relative;
@@ -8033,18 +8064,14 @@ footer .submenu-footer li:last-child:after {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.tabla-loterias .loteria--color .loteria_logo img {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-.tabla-loterias .loteria--color_info {
+.tabla-loterias .loteria_info {
   border-top: 1px solid #e8e8e8;
   display: table;
   padding: 20px 20px 0;
   position: relative;
   width: 100%;
 }
-.tabla-loterias .loteria--color__fecha {
+.tabla-loterias .loteria__fecha {
   border-right: 1px solid #e8e8e8;
   color: #797979;
   display: table-cell;
@@ -8052,14 +8079,14 @@ footer .submenu-footer li:last-child:after {
   font-size: 13px;
   margin: 0;
 }
-.tabla-loterias .loteria--color__num {
+.tabla-loterias .loteria__num {
   border-right: 1px solid #e8e8e8;
   color: #575757;
   display: table-cell;
   font-family: 'MontserratBold';
   font-size: 18px;
 }
-.tabla-loterias .loteria--color:not(:first-child):before {
+.tabla-loterias .loteria:not(:first-child):before {
   background: #e8e8e8;
   content: " ";
   display: block;
@@ -8070,7 +8097,7 @@ footer .submenu-footer li:last-child:after {
   width: 1px;
   z-index: 10;
 }
-.tabla-loterias .loteria--color:not(:first-child) .loteria_info:before {
+.tabla-loterias .loteria:not(:first-child) .loteria_info:before {
   background: #e8e8e8;
   content: " ";
   display: block;
@@ -8080,6 +8107,10 @@ footer .submenu-footer li:last-child:after {
   top: 50%;
   width: 1px;
   z-index: 10;
+}
+.tabla-loterias .loteria--color .loteria_logo img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .fixed-menu {
   border: none;

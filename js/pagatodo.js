@@ -404,18 +404,6 @@ $(window).load(function(){
 
 /* end pagatodo.js */
 
-
-/*
-  *** Scripts Test
-*/
-
-// $(function() {
-//   $( "#accordion-sidebar" ).accordion({
-//     heightStyle: "fill"
-//   });
-// });
-
-
 /* Google Map API */
 
 var map = null;
@@ -546,6 +534,21 @@ function geoFindMe(){
 
   navigator.geolocation.getCurrentPosition(success, error);
 }
+
+
+/*
+  *** Scripts Test
+*/
+
+$(function() {
+  $( "#accordion-sidebar" ).accordion({
+    heightStyle: "content"
+  });
+});
+
+$('.site-map-link-temporal .icon-cancel').on('click', function(){
+  $('.site-map-link-temporal').hide();
+});
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
