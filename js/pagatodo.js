@@ -537,18 +537,34 @@ function geoFindMe(){
 
 
 /*
-  *** Scripts Test
+  *** Accordion Results
+*/
+
+
+$(function() {
+  $( "#accordion-results" ).accordion({
+    collapsible: true,
+    heightStyle: "content"
+  });
+});
+
+
+/*
+  *** Accordion Results
 */
 
 $(function() {
-  $( "#accordion-sidebar" ).accordion({
-    heightStyle: "content"
-  });
+  $( "#tabs-seccion-completa-juegos" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+
+  $( "#tabs-seccion-completa-juegos ul li a" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 });
 
 $('.site-map-link-temporal .icon-cancel').on('click', function(){
   $('.site-map-link-temporal').hide();
 });
+
+
+
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
