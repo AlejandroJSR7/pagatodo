@@ -1,0 +1,142 @@
+.search-result-title
+  padding 30px 0
+  position relative
+  .container
+    position relative
+  &__input
+    background c_white
+    color c_gray2
+    display block
+    font-family 'MontserratBold'
+    font-size 48px
+    font-weight normal
+    margin 0
+    padding 0 40px
+    text-align center
+    text-transform uppercase
+    width 100%
+  &__icon
+    border-left 1px solid c_gray2
+    color c_gray2
+    font-size 30px
+    font-weight normal
+    padding-left 10px
+    position absolute
+    right 0
+    top 50%
+    transform translateY(-50%)
+    
+.sort-results
+  background c_gray3
+  margin-bottom 5px
+  .container
+    clearfix()
+  &__num
+    color c_gray2
+    float left
+    font-family 'ArialNarrow'
+    font-size 16px
+    margin 0 15px 0 0
+    padding 15px 0
+    
+.search-results
+  background c_white
+  position relative
+  z-index 10
+.result
+  padding-bottom 15px
+  padding-top 15px
+  .container
+    clearfix()
+  &__image
+    float left
+    margin-right 20px
+    position relative
+    width 300px
+    a
+      display block
+    img
+      width 100%
+  &__date
+    background c_red6
+    color c_white
+    display inline-block
+    font-family 'ArialNarrow'
+    font-size 12px
+    left 10px
+    padding 5px
+    position absolute
+    top 0
+    &:after
+      background-image url('../images/design/misc/date-bg.png')
+      background-repeat no-repeat
+      background-size contain
+      content " "
+      display block
+      height 100%
+      left 100%
+      position absolute
+      top 0
+      width 50px
+  &__info
+    float left
+    min-height 168px
+    padding-bottom 35px
+    padding-top 20px
+    position relative
+    width 600px
+    p
+      color c_gray2
+      font-family 'ArialNarrow'
+      font-size 16px
+  &__title
+    color c_gray2
+    font-size 21px
+    font-weight bold
+    margin 0
+    text-transform uppercase
+  .btn
+    bottom 0
+    left 0
+    position absolute
+  //.result
+  &:hover
+    background c_graylight2
+    .result__title
+      color c_red6
+      a
+        text-decoration none
+    .btn
+      text-decoration none
+
+.winners
+  background c_graylight2
+  margin-bottom 10px
+  margin-top 10px
+  padding 50px 0
+  .container
+    clearfix()
+  &__item
+    float left
+    width 305px
+    &:not(:first-child)
+      padding-left 20px
+    &:not(:last-child)
+      padding-right 20px
+      border-right 1px solid c_graylight
+    h4
+      color c_gray2
+      font-size 22px
+      margin 0 0 15px 0
+    p
+      color c_gray2
+      font-family 'ArialNarrow'
+      font-size 16px
+      margin 0 0 15px 0
+    &:hover
+      h4
+        color c_red6
+      .btn
+        background c_red6
+        border 1px solid c_red6
+        color c_white

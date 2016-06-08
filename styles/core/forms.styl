@@ -1,0 +1,146 @@
+.custom-select
+  border 1px solid c_gray2
+  border-radius 5px
+  color c_gray2
+  cursor pointer
+  display inline-block
+  font-family 'ArialNarrow'
+  font-size 13px
+  font-weight normal
+  margin 10px 5px
+  overflow hidden
+  padding-right 25px
+  position relative
+  text-transform uppercase
+  &:after
+    background url('../images/design/icons/custom-select-arrow@2x.png')
+    background-position center
+    background-repeat no-repeat
+    background-size contain
+    content " "
+    display block
+    height 10px
+    position absolute
+    right 5px
+    top 50%
+    transform translateY(-50%)
+    width 12px
+  select
+    -webkit-appearance none
+    appearance none
+    background transparent
+    border none
+    cursor pointer
+    padding-bottom 5px
+    padding-left 5px
+    padding-top 5px
+    width 120%
+    
+// .oportunidades 
+//   .field
+//     position: relative
+//     i
+//       left: 0px
+//       top: 0px
+//       position: absolute
+//       height: 50px
+//       width: 50px
+//       font-size: 1.5em
+//       text-align: center
+//       line-height: 44px
+//       transition: all 0.3s ease-out
+//       pointer-events: none
+//   .field input[type="text"],
+//   .field input[type="tel"],
+//   .field input[type="email"],
+//   .field select,
+//   .submit
+//     margin-left: 55px
+//     padding: 1em 1.5em
+//     width: 80%
+//   .field select,
+//   .submit input[type="submit"]
+//     border: 1px solid #9D9D9D
+//   .submit
+//     padding: 2.5em 0
+//     text-align: right
+//     input[type="submit"]
+//       padding: 0.3em 1.8em
+//       color: #5A5959
+//       border-radius: 5px
+
+.form
+  input
+    color #b3b3b3
+    display block
+    font-family 'ArialNarrow'
+    font-size 13px
+    font-weight normal
+    line-height 1em
+    margin 2px 0
+    padding 15px 13px
+    width 100%
+  .custom-select
+    margin 0
+    width 100%
+    &:after
+      right 20px
+    select
+      font-size 15px
+      padding 12px
+      width 105%
+  .btn
+    background c_white
+    color c_gray2
+    cursor pointer
+    font-family 'MontserratBold'
+    font-size 14px
+    padding 10px 40px
+    transition all 0.7s ease-in
+    width auto
+    &:hover
+      background c_red6
+      border-color c_red6
+      color c_white
+  &-field
+    margin-bottom 20px
+  &-field-icon
+    position relative
+    clearfix()
+    .icon
+      color #858585
+      float left
+      font-size 35px
+      line-height 44px
+      margin-right 20px
+      text-align center
+      width 50px
+    input,
+    .custom-select
+      float right
+      width calc(100% - 70px)
+      
+.oportunidades-form__submit
+  height 40px
+  position relative
+  text-align right
+  clearfix()
+  .form-field
+    color c_gray2
+    float left
+    margin-left 20px
+    margin-right 20px
+    margin-top 10px
+    padding-left 129px
+    .aceptar-terminos
+      border none
+    input[type="checkbox"]
+      border none
+      display inline-block
+      margin-right 10px
+      width inherit
+  .btn
+    margin-left 20px
+
+input
+  background c_graylight

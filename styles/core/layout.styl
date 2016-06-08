@@ -1,0 +1,335 @@
+body *
+html *
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  box-sizing border-box
+a
+  text-decoration none
+  color inherit
+img
+  max-width 100%
+  width auto
+fieldset
+  border 0
+  margin 0
+  padding 10px 10px 0px 10px
+table
+  &.v-align
+    height 100%
+    table-layout fixed
+    width 100%
+    tbody tr
+      margin-right auto
+      vertical-align middle
+      width 768px
+      
+p
+  color c_gray2
+  font-family 'ArialNarrow'
+  font-size 16px
+  strong
+    font-weight bold
+    font-family 'HelveticaNeueBd'
+
+hr
+  border-top 1px solid c_graylight
+
+.uppercase
+  text-transform uppercase
+.lowercase
+  text-transform lowercase
+.absolute
+  position absolute
+.block
+  display block
+.clearfix
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+.inline
+  display inline-block
+.left
+  float left
+.table
+  display table
+  width 100%
+  height 100%
+  .table-cell
+    display table-cell
+    vertical-align middle
+for i in (1..12)
+  .lg_{i}
+    col-width(i)
+    float left
+    min-height 1px
+    &.inline-block
+      float none
+      display inline-block
+      vertical-align top
+      margin-left -4px
+    &.inline-block-m
+      float none
+      display inline-block
+      vertical-align middle
+      margin-left -4px
+.z-index
+  z-index 10
+.margin-page
+  margin 0 auto
+.relative
+  position relative
+.right
+  float right
+.txt_center
+  text-align center
+.txt_left
+  text-align left
+.txt_right
+  text-align right
+.txt_justify
+  text-align justify
+.overhide
+  overflow hidden !important
+.alpha
+  font-size font-size-alpha
+.beta
+  font-size font-size-beta
+.gamma
+  font-size font-size-gamma
+h1
+.h1
+  font-size font-size-h1
+h2
+.h2
+  font-size font-size-h2
+h3
+.h3
+  font-size font-size-h3
+h4
+.h4
+  font-size font-size-h4
+h5
+.h5
+  font-size font-size-h5
+h6
+.h6
+  font-size font-size-h6
+.hidden-lg
+.hidden-md
+.hidden-sm
+.hidden-xs
+  display block !important
+  visibility visible
+.visible-lg
+.visible-md
+.visible-sm
+.visible-xs
+  display none !important
+  visibility hidden
+.open-modal
+  cursor pointer
+.modalbox
+  background rgba(0,0,0,0.6)
+  bottom 0
+  display none
+  height 100%
+  left 0
+  overflow auto
+  position fixed
+  right 0
+  top 0
+  width 100%
+  z-index 9999
+  .content
+    background c_white
+    margin 0 auto
+    max-width 768px
+    padding 60px 10px
+    position relative
+    text-align center
+  .close-modal
+    background c_white
+    color c_dark
+    core-options(border-radius, 50%)
+    cursor pointer
+    display block
+    font-family Helvetica,arial,sans-serif
+    font-size 25px
+    height 30px
+    padding 5px 8px
+    position absolute
+    right 10px
+    top 10px
+    width 30px
+    z-index 5
+    &:before
+      color c_dark
+      content 'X'
+      font-family Arial
+      height 100%
+      left 0px
+      line-height 30px
+      position absolute
+      top 0px
+      width 100%
+  &[data-modal="video"]
+    .content
+      max-width 1200px
+      padding 0
+    .video
+      padding-bottom 56.92%
+      position relative
+      width 100%
+    .iframe
+      height 100%
+      left 0px
+      position absolute
+      top 0px
+      width 100%
+  &[data-modal="gallery"]
+    .content
+      max-width 900px
+      padding 20px
+    .modal-gallery
+      opacity 0
+      margin 0
+      .slide
+        outline none
+      img
+        display block
+        margin 0 auto
+        max-width 100%
+        width auto
+      .slick-prev
+      .slick-next
+        opacity 1
+for i in (1..10)
+  .p{i}0
+    padding i*10px
+for i in (1..10)
+  .pl{i}0
+    padding-left i*10px
+for i in (1..10)
+  .pr{i}0
+    padding-right i*10px
+for i in (1..10)
+  .pt{i}0
+    padding-top i*10px
+for i in (1..10)
+  .pb{i}0
+    padding-bottom i*10px
+for i in (1..10)
+  .ph{i}0
+    padding 0 i*10px
+for i in (1..10)
+  .pv{i}0
+    padding i*10px 0
+        
+for i in (1..10)
+  .m{i}0
+    margin i*10px
+for i in (1..10)
+  .ml{i}0
+    margin-left i*10px
+for i in (1..10)
+  .mr{i}0
+    margin-right i*10px
+for i in (1..10)
+  .mt{i}0
+    margin-top i*10px
+for i in (1..10)
+  .mb{i}0
+    margin-bottom i*10px
+for i in (1..10)
+  .mh{i}0
+    margin 0 i*10px
+for i in (1..10)
+  .mv{i}0
+    margin i*10px 0
+    
+@media all and (max-width window-lg)
+  .hidden-lg
+    display none !important
+    visibility hidden
+  
+  .visible-lg
+    display inherit !important
+    visibility visible
+  for i in (1..12)
+    .halfmd_{i}
+      col-width(i)
+      float left
+      
+@media all and (max-width window-md)
+  for i in (1..12)
+    .lg_{i}
+      width 100%
+
+  for i in (1..12)
+    .md_{i}
+      col-width(i)
+      float left
+      &.inline-block
+        float none
+        display inline-block
+        vertical-align top
+        margin-left -4px
+  
+  .hidden-md
+    display none !important
+    visibility hidden
+  
+  .visible-md
+    display inherit !important
+    visibility visible
+    &.inline
+      display inline-block !important
+
+@media all and (max-width window-sm)
+  for i in (1..12)
+    .md_{i}
+      width 100%
+  for i in (1..12)
+    .sm_{i}
+      col-width(i)
+      float left
+      &.inline-block
+        float none
+        display inline-block
+        vertical-align top
+        margin-left -4px
+
+  .hidden-sm
+    display none !important
+    visibility hidden
+
+  .visible-sm
+    display inherit !important
+    visibility visible
+
+@media all and (max-width window-xs)
+  for i in (1..12)
+    .sm_{i}
+      width 100%
+
+  for i in (1..12)
+    .xs_{i}
+      col-width(i)
+      float left
+      &.inline-block
+        float none
+        display inline-block
+        vertical-align top
+        margin-left -4px
+
+  .hidden-xs
+    display none !important
+    visibility hidden
+
+  .visible-xs
+    display inherit !important
+    visibility visible

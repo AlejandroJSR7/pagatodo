@@ -1,0 +1,89 @@
+.form-simulador
+  margin 0 auto
+  width 300px
+  .form-field-form__submit    
+    margin-bottom 20px
+    text-align right
+    clearfix()
+    input[type="submit"]
+      background c_white
+      border-color c_red6
+      border-width 1px
+      color c_red6
+      float right
+      &:hover
+        background c_red6
+        border-color c_red6
+        color white
+
+.simulador-resultados-2-col
+  margin 0 auto
+  width 620px
+  clearfix()
+  .simulador-resultados
+    margin-left 0
+    &__texto
+      left 0
+  .column
+    float left
+    width 50%
+    &:first-child
+      .resultado
+        margin-right 10px
+  h4
+    color #999
+    font-family 'MontserratBold'
+    font-size 15px
+    font-weight normal
+    margin-top 0
+    padding-left 50px
+    text-align center
+    text-transform uppercase
+
+.simulador-resultados
+  font-family color
+  margin 0 auto 15px auto
+  position relative
+  text-align right
+  width 300px
+  clearfix()
+  &__texto
+    color c_gray2
+    font-family 'ArialNarrow'
+    font-size 15px
+    left -35%
+    line-height 60px
+    position absolute
+  .icon-simulador
+    border none
+    display block
+    float left
+    vertical-align top
+    width 60px
+  .resultado
+    border 2px solid c_red6
+    color c_red6
+    display inline-block
+    font-family 'MontserratBold'
+    font-size 28px
+    margin-left 20px
+    padding 10px
+    text-align center
+    vertical-align top
+    width calc(100% - 80px)
+
+.simulador
+  border none
+
+.banner-simulador
+  margin-top -100px
+  position relative
+  .share-menu
+    background c_white
+    margin 0
+    padding 10px 0 10px 5px
+    position absolute
+    right 0
+    top 0
+  img
+    max-width 100%

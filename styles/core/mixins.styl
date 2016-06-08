@@ -1,0 +1,65 @@
+font-source(data)
+  font-family data
+  src url('../fonts/'+data+'/'+data+'.eot')
+  src url('../fonts/'+data+'/'+data+'.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/'+data+'/'+data+'.woff') format('woff'),
+      url('../fonts/'+data+'/'+data+'.ttf') format('truetype'),
+      url('../fonts/'+data+'/'+data+'.svg#'+data+'') format('svg')
+  font-weight normal
+  font-style normal
+  
+col-width(data)
+  width (data*(100/12))+'%'
+
+clearfix()
+  &:before
+  &:after
+    visibility hidden
+    display block
+    font-size 0
+    content " "
+    height 0
+  &:after
+    clear both
+
+transition(arg)
+  -moz-transition arg
+  -ms-transition arg
+  -o-transition arg
+  -webkit-transition arg
+  transition arg
+
+core-options(prop,args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+degraded(color1,color2)
+  background color1
+  background -moz-linear-gradient(top, color1 0%, color2 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(), col-stop(0%, color1), color-stop(100%, color2))
+  background -webkit-linear-gradient(top, color1 0%, color2 100%)
+  background -o-linear-gradient(top, color1 0%, color2 100%)
+  background -ms-linear-gradient(top, color1 0%, color2 100%)
+  background linear-gradient(to bottom, color1 0%, color2 100%)
+
+animate(animate, parameters)
+  animation animate parameters
+  -webkit-animation animate parameters
+  -moz-animation animate parameters
+  -o-animation animate parameters
+  -ms-animation animate parameters
+  
+transform(transform_arguments)
+  -webkit-transform transform_arguments
+  -moz-transform transform_arguments
+  -ms-transform transform_arguments
+  -o-transform transform_arguments  
+  transform transform_arguments
+  
+cross-properties(properties, arguments)
+  -webkit-{properties} arguments
+  -moz-{properties} arguments
+  -ms-{properties} arguments
+  -o-{properties} arguments
+  {properties} arguments

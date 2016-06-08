@@ -1,0 +1,20 @@
+{
+  "name": "PAGATODO",
+  "version": "0.0.1",
+  "description": "PAGA TODO para todo",
+  "main": "index.js",
+  "author": "BlueCell",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "~2.5.2",
+    "gulp-connect": "~2.2.0",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-livereload": "~3.8.0",
+    "gulp-plumber": "~1.0.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  }
+}

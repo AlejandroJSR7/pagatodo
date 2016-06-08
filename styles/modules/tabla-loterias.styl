@@ -1,0 +1,71 @@
+.tabla-loterias
+  border 1px solid c_graylight
+  list-style-type none
+  padding 20px
+  clearfix()
+  .loteria
+    float left
+    position relative
+    text-align center
+    width 25%
+    &_logo
+      padding 20px 0
+      position relative
+      img
+        color c_red6
+        max-width 125px
+        margin 0 auto
+        -webkit-filter grayscale(100%)
+        filter grayscale(100%)
+        &:hover
+          -webkit-filter grayscale(0)
+          filter grayscale(0)
+    &_info
+      border-top 1px solid c_graylight
+      display table
+      padding 20px 20px 0
+      position relative
+      width 100%
+    &__fecha
+      border-right 1px solid c_graylight
+      color c_gray2
+      display table-cell
+      font-family 'ArialNarrow'
+      font-size 13px
+      margin 0
+    &__num
+      border-right 1px solid c_graylight
+      color c_gray
+      display table-cell
+      font-family 'MontserratBold'
+      font-size 18px
+
+    &:not(:nth-child(4))
+      .loteria_logo
+        &:before
+          background c_graylight
+          content " "
+          display block
+          height 75%
+          right 0
+          position absolute
+          top 50%
+          transform translateY(-50%)
+          width 1px
+          z-index 10
+      .loteria_info
+        &:before
+          background c_graylight
+          content " "
+          display block
+          height 20px
+          left 0
+          position absolute
+          top 50%
+          width 1px
+          z-index 10
+  .loteria--color
+    .loteria_logo
+      img
+        -webkit-filter grayscale(0%)
+        filter grayscale(0%)

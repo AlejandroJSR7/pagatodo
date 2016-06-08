@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--#insert file="./doc/-head.code.html" -->
+<body class="home">
+<!-- wrapper -->
+  <div class="wrapper internal">
+    <!--#insert file="./components/-header.code.html" -->
+    <section class="main-content">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="index.html" class="c_red">Servicios y Productos  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mb60">
+          <h3 class="title-line c_gray2 uppercase">
+            Puntos de atención
+          </h3>
+          <p>
+            Busca tu punto más cercano
+          </p>  
+        </div>
+      </div>       
+      <div class="container">
+        <div class="puntos-atencion mb80">
+          <div class="puntos-header">
+            <div class="puntos-header__buscador txt_center">
+              <input type="text" value="El Rosal" placeholder="Buscar Puntos de atención">
+              <ul class="puntos-icons">
+                <li class="icon-search">Buscar</li>
+                <li class="icon-locate" onclick="geoFindMe()">Localizar</li>
+              </ul> 
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="puntos-content">
+              <form class="form puntos-form mb20">
+                <label for="ventas" class="c_red puntos-label"><input type="checkbox" class="checkbox" id="ventas" name="locations[]" value="ventas" checked onclick="getMarkers()"><i class="icon-location icon-location-red"></i> Puntos de venta</label>
+                <label for="cajas" class="c_green puntos-label"><input type="checkbox" name="locations[]" class="checkbox" id="cajas" value="cajas" checked onclick="getMarkers()"><i class="icon-location icon-location-green"></i> Cajas</label>
+                <label for="satelites" class="c_blue puntos-label"><input type="checkbox" name="locations[]" class="checkbox" id="satelites" value="satelites" checked onclick="getMarkers()"> <i class="icon-location icon-location-blue"></i> Satélites</label>
+              </form>
+              <div class="puntos-map mr20" id="map" style="width: 740px; height: 450px;"></div>
+            </div>
+            <div class="puntos-aside content-scroll"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+<!--#insert file="./components/-fixed-menu.code.html" -->
+<!-- footer -->
+  <!--#insert file="./doc/-footer.code.html" -->
+  <!--#insert file="./doc/-scripts.code.html" -->
+  <!--#insert file="./doc/-script.googlemap.html" -->
+</body>
+</html>

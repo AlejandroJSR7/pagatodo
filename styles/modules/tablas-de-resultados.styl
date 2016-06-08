@@ -1,0 +1,296 @@
+.date-input
+  display inline-block
+  font-family 'ArialNarrow'
+  vertical-align top
+  clearfix()
+  .calendar-icon
+    float left
+    margin-top 5px
+    margin-right 20px
+  input
+    color c_gray2
+    font-size 13px
+    height 40px
+    padding-left 15px
+    vertical-align top
+    width 220px
+    &.bg_white
+      background c_white
+
+.tabla-de-resultados
+  border none
+.tabla-de-resultados__titulo
+  color white
+  cursor pointer
+  line-height 70px
+  padding 10px 30px
+  position relative
+  h3
+    font-family 'MontserratBold'
+    font-size 28px
+    font-weight normal
+    margin 0
+    text-transform uppercase
+  &.ui-state-active
+    .arrow-open-or-close
+      background-image url('../images/design/icons/arrow-icon-accordion-bottom@2x.png')
+.tabla-de-resultados__tabla
+  border none
+  &__header
+    background c_graylight2
+    padding 20px 15px 5px
+    clearfix()
+    h3
+      display inline-block
+      float left
+      font-family 'MontserratBold'
+      font-size 18px
+      margin 5px 50px 5px 0
+      text-transform uppercase
+      width auto
+    .calendar-icon
+      display inline-block
+      float left
+      margin-right 20px
+      vertical-align middle
+    .custom-select
+      float right
+      margin 0
+      margin-left 20px
+      padding 5px 10px
+      width 200px
+  table
+    background c_graylight2
+    border none
+    font-family 'ArialNarrow'
+    font-weight 300
+    padding 10px
+    width 100%
+    thead
+      background c_graylight
+      tr
+        th
+          color c_gray
+          padding 10px 0px
+          span
+            margin 10px 5px
+        th:first-child
+          span
+            margin-left 0
+        th:last-child
+          span
+            margin-right 0
+    tbody
+      tr
+        td
+          color c_gray2
+          span
+            background c_white
+            display block
+            margin 10px 5px 0
+            padding 10px 10px
+        td:first-child
+          text-align center
+          span
+            margin-left 0
+          img
+            height 55px
+            max-width 98px
+        td:last-child
+          text-align center
+          span
+            margin-right 0
+
+.tabla-de-resultados__tabla.tabla-con-logos
+  table
+    tbody
+      tr
+        td
+          span
+            padding 20px 20px
+        td:first-child
+          padding 5px 20px
+          width 110px
+          span
+            background transparent
+          img
+            border-radius 10px
+            margin-top 10px
+
+.btn-premio-seco
+  font-family 'ArialNarrow'
+  font-size 14px
+  padding 10px 15px
+  text-transform initial
+
+.premios-secos-logo
+  img
+    width 156px
+    
+.premio-mayor-resultado
+  margin-bottom 20px
+  .logo
+    font-family 'MontserratBold'
+    h4
+      color c_red6
+      margin 0
+    .date
+      color c_red6
+      font-family 'MontserratBold'
+      margin 0
+      position relative
+      &:before
+      &:after
+        background c_red6
+        content " "
+        height 1px
+        left 0
+        position absolute
+        top 50%
+        transform translateY(-50%)
+        width 20px
+      &:after
+        left initial
+        right 0
+  .date-input
+    input   
+      background c_graylight
+    
+.lottery-slider.small-white
+  text-align left
+  ul.flip
+    height 30px
+    line-height 36px
+    width 32px
+    li
+      font-size 16px
+      div.inn
+        color c_red6
+        background c_white
+
+.simple-table
+  color c_gray2
+  font-family 'ArialNarrow'
+  margin-bottom 20px
+  text-align center
+  strong
+    color c_gray
+    font-family 'MontserratBold'
+    font-weight normal
+  table
+    width 100%
+    th
+      border-top 1px solid c_graylight
+      color c_gray
+      font-family 'MontserratBold'
+      font-size 14px
+      margin-bottom 5px
+      padding 20px 10px 25px
+      position relative
+      &:before
+        background c_graylight
+        content " "
+        display block
+        height 50%
+        position absolute
+        right 0
+        top 10px
+        width 1px
+      &:after
+        background c_graylight
+        bottom 10px
+        content " "
+        display block
+        height 1px
+        left 0
+        position absolute
+        width 100%
+      &:last-child
+        &:before
+          display none
+    td
+      border-bottom 1px solid c_graylight
+      font-size 16px
+      padding 10px 0
+      position relative
+      &:after
+        background c_graylight
+        content " "
+        display block
+        height 70%
+        position absolute
+        right 0
+        top 50%
+        transform translateY(-50%)
+        width 1px
+
+    tbody
+      tr:first-child
+        td
+          border-top 1px solid c_graylight
+      tr
+        td:last-child
+          &:after
+            display none
+  &--results
+    strong
+      border-left 1px solid c_graylight
+      color c_gray2
+      display inline-block
+      font-size 20px
+      margin-left 20px
+      padding-left 20px
+      vertical-align middle
+
+.search-and-result
+  clearfix()
+  padding-bottom 5px
+  padding-top 5px
+  .search-and-result__search
+    float left
+    width 50%
+    .date-input
+      width 100%
+      input
+        width calc(100% - 50px)
+  .search-and-result__result
+    float right
+    padding-left 20px
+    width 50%
+    clearfix()
+    span
+      color c_gray2
+      display inline-block
+      font-family 'ArialNarrow'
+      font-size 15px
+      margin-right 20px
+    .lottery-slider
+      display inline-block
+      
+
+.simple-results
+  display inline-block
+  margin 0
+  text-align right
+  vertical-align middle
+  clearfix()
+  li
+    background url('../images/design/bg/simple-result-bg@2x.png')
+    background-position -41px 0
+    background-repeat no-repeat
+    background-size cover
+    color c_red6
+    display block
+    float left
+    font-size 25px
+    height 40px
+    line-height 38px
+    padding-right 1px
+    text-align center
+    width 40px
+    &:not(:last-child)
+      margin-right 10px
+    &:first-child
+      background-position 0 0
+    &:last-child
+      background-position 0 0

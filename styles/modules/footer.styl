@@ -1,0 +1,96 @@
+footer
+  background c_graylight
+  color c_blue2
+  display block
+  font-family 'Roboto Condensed'
+  font-size 16px
+  font-weight 300
+  padding 25px 0
+  ul
+    display block
+    margin 0
+    padding 0
+    li
+      display inline-block
+      list-style none
+  .right
+    text-align right
+  .left
+    padding-top 20px
+  .menu-footer
+    margin-bottom 14px
+    li
+      &:after
+        content '|'
+        display inline-block
+        margin-left 10px
+        margin-right 10px
+        vertical-align middle
+      &:last-child
+        &:after
+          display none
+  .social
+    margin-bottom 14px
+    li
+      margin-left 8px
+    a
+      &:hover
+        text-decoration none
+    .icon
+      color c_white
+      display block
+      font-size 10px
+      height 20px
+      line-height 20px
+      position relative
+      width 20px
+      core-options(border-radius, 50%)
+      &.icon-facebook
+        background #0f2d7d
+      &.icon-twitter
+        background #7ac9f4
+      &:before
+        display block
+        line-height 20px
+        margin 0
+        text-align center
+        width 20px
+  .submenu-footer
+    font-size 13px
+    margin-bottom 5px
+    li
+      &:after
+        content '|'
+        display inline-block
+        margin-left 4px
+        margin-right 4px
+        vertical-align middle
+      &:last-child
+        &:after
+          display none
+
+.site-map-link-temporal
+  background c_white
+  border 1px solid c_blue
+  bottom 10%
+  font-size 12px
+  color c_blue
+  display block
+  left 10px
+  padding 10px 20px
+  position fixed
+  text-align center
+  z-index 9999
+  .icon.icon-cancel
+    background white
+    border 1px solid c_blue
+    border-radius 50%
+    cursor pointer
+    display block
+    font-size 13px
+    line-height 13px
+    position absolute
+    right -5px
+    top -5px
+    &:before
+      margin 0

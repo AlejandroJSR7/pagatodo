@@ -1,0 +1,224 @@
+//
+// * Helpers
+//
+
+.container
+  display block
+  margin 0 auto
+  max-width 960px
+  padding 0 10px
+  clearfix()
+  
+.btn    
+  border 2px solid c_gray2
+  border-radius 5px
+  color c_gray2
+  display inline-block
+  font-family 'MontserratBold'
+  font-size 14px
+  font-weight normal
+  padding 6px 15px
+  text-transform uppercase
+  &:hover
+    text-decoration none
+  &.btn-primary
+    background transparent
+    border-color c_yellow
+    color c_yellow
+    core-options(border-radius, 5px)
+    transition(all .3s ease)
+    &:hover
+      background c_yellow
+      color c_red
+      text-decoration none
+      transition(all .3s ease)
+
+  &.btn-secundary
+    background transparent
+    border-color c_red5
+    color c_red5
+    core-options(border-radius, 5px)
+    transition(all .3s ease)
+    &:hover
+      background c_red5
+      color c_white
+      transition(all .3s ease)
+
+  &.btn-lg
+    font-size 19px
+    padding 10px 22px
+    
+.btn.btn--h-red
+  &:hover
+    background c_red6
+    border 1px solid c_red6
+    color c_white
+
+angle-top(anglecolor)
+  &:before
+    background transparent
+    border-bottom 65px solid transparent
+    border-right 1920px solid anglecolor
+    border-top 0 solid transparent
+    content " "
+    display block
+    height 0
+    left 0
+    position absolute
+    top 0
+    width 1px
+    
+angle-bottom(anglecolor)
+  &:after
+    background transparent
+    border-bottom 0 solid transparent
+    border-left 1920px solid anglecolor
+    border-top 65px solid transparent
+    content " "
+    display block
+    height 0
+    left 0
+    position absolute
+    bottom 0
+    width 1px
+
+.angle-top-white
+  angle-top(c_white)
+  
+.angle-bottom-white
+  angle-bottom(c_white)
+
+.angle-bottom-yellow
+  angle-bottom(c_yellow2)
+  
+.angle-bottom-red
+  angle-bottom(c_red)
+
+.c_red
+  color c_red6 !important
+.c_blue
+  color c_blue2 !important
+.c_yellow
+  color c_yellow !important
+.c_gray
+  color c_gray !important
+.c_gray2
+  color c_gray2 !important
+.c_green
+  color: c_green !important
+  
+.hidden
+  display none
+  
+.see-more
+  padding 30px 0
+  position relative
+  text-align center
+  &:before
+  &:after
+    background c_graylight
+    content " "
+    display inline-block
+    height 2px
+    left 0
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    width 280px
+  &:after
+    left initial
+    right 0
+  .btn
+      margin 0 auto
+      width auto
+      
+.btn-download
+  font-family 'MontserratBold'
+  font-size 15px
+  padding 30px 0
+  position relative
+  text-align center
+  &:after
+    background c_graylight
+    content " "
+    display inline-block
+    height 2px
+    left 0
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    width 100%
+    z-index 98
+  a
+    background-color c_white
+    z-index 99
+    padding 10px 30px
+    position relative
+  .btn
+      margin 0 auto
+      width auto
+      span
+        background-color red
+      
+.border-none
+  border none!important
+
+// Grids
+
+.col-12
+  float none
+  width 100%
+.col-6
+  float left
+  width 50%
+  
+.bg--green
+  background c_green!important
+.bg--blue
+  background c_blue2!important
+.bg--blue2
+  background c_blue3!important
+.bg--red
+  background c_red6!important
+  
+.bg-tab-deportivas
+  background-color #012158
+  background-image url('../images/design/bg/bg-tab-deportivas@2x.png')
+  background-repeat no-repeat
+  background-size contain
+.bg-tab-sorteos
+  background-color #003894
+  background-image url('../images/design/bg/bg-tab-sorteos@2x.png')
+  background-repeat no-repeat
+  background-size contain
+.bg-tab-astro
+  background-color #FFAD00
+  background-image url('../images/design/bg/bg-tab-astro@2x.png')
+  background-repeat no-repeat
+  background-size contain
+.bg-tab-baloto
+  background-color #C30707
+  background-image url('../images/design/bg/bg-tab-baloto@2x.png')
+  background-repeat no-repeat
+  background-size contain
+.bg-tab-loterias
+  background-color #002C7A
+  background-image url('../images/design/bg/bg-tab-loterias@2x.png')
+  background-repeat no-repeat
+  background-size contain
+
+.icon-location
+  background-position 0 0
+  background-repeat no-repeat
+  background-size cover
+  display inline-block
+  margin-right 10px
+  height 16px
+  width 10px
+  vertical-align top
+  &-red
+    background-image url('../images/design/icons/icon-location-red@2x.png')
+  &-green
+    background-image url('../images/design/icons/icon-location-green@2x.png')
+  &-blue
+    background-image url('../images/design/icons/icon-location-blue@2x.png')

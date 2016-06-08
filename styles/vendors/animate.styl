@@ -1,0 +1,258 @@
+
+//class
+.animated
+  cross-properties(animation-duration, 1s)
+  cross-properties(animation-fill-mode, both)
+
+.animated.infinite
+  cross-properties(animation-iteration-count, infinite)
+
+.animated.half
+  cross-properties(animation-duration, .5s)
+  
+.animated.hinge
+  cross-properties(animation-duration, 2s)
+
+.animated.bounceIn,
+.animated.bounceOut
+  cross-properties(animation-duration, .75s)
+
+.animated.flipOutX,
+.animated.flipOutY
+  cross-properties(animation-duration, .75s)
+
+//animations
+@keyframes bounceIn
+  from
+  20%
+  40%
+  60%
+  80%
+  to
+    cross-properties(animation-timing-function, cubic-bezier(0.215, 0.610, 0.355, 1.000))
+  0%
+    opacity 0
+    transform(scale3d(.3, .3, .3))
+  20%
+    transform(scale3d(1.1, 1.1, 1.1))
+  40% 
+    transform(scale3d(.9, .9, .9))
+  60%
+    opacity 1
+    transform(scale3d(1.03, 1.03, 1.03))
+  80%
+    transform(scale3d(.97, .97, .97))
+  to
+    opacity 1
+    transform(scale3d(1, 1, 1))
+
+.bounceIn
+  cross-properties(animation-name, bounceIn)
+
+@keyframes bounceOut
+  20%
+    transform(scale3d(.9, .9, .9))
+  50%
+  55%
+    opacity 1
+    transform(scale3d(1.1, 1.1, 1.1))
+  to
+    opacity 0
+  
+.bounceOut
+  cross-properties(animation-name, bounceOut)
+    
+@keyframes bounce
+  from
+  20%
+  53%
+  80%
+  to
+    cross-properties(animation-timing-function, cubic-bezier(0.215, 0.610, 0.355, 1.000))
+    transform(translate3d(0,0,0))
+  40%
+  43% 
+    cross-properties(animation-timing-function, cubic-bezier(0.755, 0.050, 0.855, 0.060))
+    transform(translate3d(0, -30px, 0))
+  70%
+    cross-properties(animation-timing-function, cubic-bezier(0.755, 0.050, 0.855, 0.060))
+    transform(translate3d(0, -15px, 0))
+  90%
+    transform(translate3d(0,-4px,0))
+
+.bounce
+  cross-properties(animation-name, bounce)
+  cross-properties(transform-origin, center bottom)
+
+@keyframes fadeIn
+  from
+    opacity 0
+  to
+    opacity 1
+
+.fadeIn
+  cross-properties(animation-name, fadeIn)
+
+@keyframes fadeOut
+  from
+    opacity 1
+  to
+    opacity 0
+
+.fadeOut
+  cross-properties(animation-name, fadeOut)
+  
+@keyframes fadeInDownBig
+  from
+    opacity 0
+    transform(translate3d(0, -2000px, 0))
+
+  to
+    opacity 1
+    transform(none)
+    
+.fadeInDownBig
+  cross-properties(animation-name, fadeInDownBig)
+  
+@keyframes fadeInUp
+  from
+    opacity 0
+    transform(translate3d(0, 100%, 0))
+  to
+    opacity 1
+    transform(none)
+
+.fadeInUp
+  cross-properties(animation-name, fadeInUp)
+  
+@keyframes fadeInDown
+  from
+    opacity 0
+    transform(translate3d(0, -100%, 0))
+
+  to
+    opacity 1
+    transform(none)
+    
+.fadeInDown
+  cross-properties(animation-name, fadeInDown)
+
+
+@keyframes fadeInLeftBig
+  from
+    opacity 0
+    transform(translate3d(-2000px, 0, 0))
+
+  to
+    opacity 1
+    transform(none)
+    
+.fadeInLeftBig
+  cross-properties(animation-name, fadeInLeftBig)
+
+@keyframes fadeInRightBig
+  from
+    opacity 0
+    transform(translate3d(1000px, 0, 0))
+
+  to
+    opacity 1
+    transform(none)
+    
+.fadeInRightBig
+  cross-properties(animation-name, fadeInRightBig)
+  
+@keyframes fadeOutRightBig
+  from
+    opacity 1
+
+  to
+    opacity 0
+    transform(translate3d(1000px, 0, 0))
+    
+.fadeOutRightBig
+  cross-properties(animation-name, fadeOutRightBig)
+  
+@keyframes zoomIn
+  from
+    opacity 0
+    transform(scale3d(.3, .3, .3))
+  50%
+    opacity 1
+    
+.zoomIn
+  cross-properties(animation-name, zoomIn)
+
+@keyframes zoomOut
+  from
+    opacity 1
+  50%
+    opacity 0
+    transform(scale3d(.3, .3, .3))
+  to
+    opacity 0
+    
+.zoomOut
+  cross-properties(animation-name, zoomOut)
+  
+@keyframes flipInX
+  from
+    transform(perspective(400px) rotate3d(1, 0, 0, 90deg))
+    cross-properties(animation-timing-function, ease-in)
+    opacity 0
+  40%
+    transform(perspective(400px) rotate3d(1, 0, 0, -20deg))
+    cross-properties(animation-timing-function, ease-in)
+  60%
+    transform(perspective(400px) rotate3d(1, 0, 0, 10deg))
+    opacity 1
+  80%
+    transform(perspective(400px) rotate3d(1, 0, 0, -5deg))
+  to
+    transform(perspective(400px))
+    
+.flipInX
+  cross-properties(backface-visibility, visible !important)
+  cross-properties(animation-name, flipInX)
+
+//own animations
+  @keyframes spin
+    0%
+      transform(rotate(0deg))
+    100%
+      transform(rotate(359deg))
+  .animate-spin
+    animate(spin, 2s infinite linear)
+    display inline-block
+  
+  @keyframes asd
+    0%
+      z-index 2
+    5%
+      z-index 4
+    100%
+      z-index 4
+      
+  @keyframes turn
+    0%
+      transform(rotateX(90deg))
+    100%
+      transform(rotateX(0deg))
+  
+  @keyframes turn2
+    0%
+      transform(rotateX(0deg))
+    100%
+      transform(rotateX(-90deg))
+  
+  @keyframes show
+    0%
+      opacity 0
+    100%
+      opacity 1
+
+  @keyframes hide
+    0%
+      opacity 1
+    100%
+      opacity 0

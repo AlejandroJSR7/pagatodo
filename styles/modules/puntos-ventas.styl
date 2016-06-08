@@ -1,0 +1,116 @@
+/* Puntos */
+.puntos
+  &-atencion 
+    .wrapper
+      display flex
+    ul
+      list-style none  
+  &-header
+    position relative
+    margin-bottom 2em
+    .puntos-icons
+      margin 0
+      padding 0
+      position absolute
+      right 15px
+      top 15px
+      li
+        border-radius 5px
+        border 1px solid #B0B0B0
+        display inline-block
+        height 40px
+        margin-left 1em
+        overflow hidden
+        text-indent -99999em
+        width 60px
+        &:hover,
+        &:focus
+          cursor pointer
+        &.icon-locate
+          position relative
+          &:before
+            background-image url(../images/design/icons/icon-locate@2x.png)
+            background-position center center
+            background-repeat no-repeat
+            background-size contain
+            content " "
+            display block
+            height 24px
+            left 50%
+            margin-left -12px
+            margin-top -12px
+            position absolute
+            top 50%
+            width 24px
+        &.icon-search
+          position relative
+          &:before
+            background-image url(../images/design/icons/icon-search@2x.png)
+            background-position center center
+            background-repeat no-repeat
+            background-size contain
+            content " "
+            display block
+            height 24px
+            left 50%
+            margin-left -12px
+            margin-top -12px
+            position absolute
+            top 50%
+            width 24px
+    &__buscador
+      input
+        background-color c_graylight4
+        color c_gray
+        font-size 34px
+        font-family 'MontserratBold'
+        text-align center
+        text-transform uppercase
+        padding 15px
+        width 100%
+
+  &-content
+    .c_green.puntos-label
+      color #5CC92A!important
+    .puntos-label
+      font-family 'ArialNarrow'
+      font-size 16px
+  &-content,
+  &-aside
+    display inline-block 
+    width 80%
+  &-aside,
+  &-aside.content-scroll
+    height 480px
+    overflow-y scroll!important
+    width 20%
+  &-form 
+    .puntos-label
+      display inline-flex  
+      font-size 90%
+      margin-right 40px
+      padding 0
+      input
+        margin-right 1em
+        width inherit
+  &-location
+    font-size 15px
+    &:first-child
+      border-top 2px solid c_graylight2
+      padding-top 15px
+    .title-line
+      font-family 'ArialNarrow'
+      font-size 16px
+      margin 0
+      padding 0
+    strong
+      display block
+      font-family 'ArialNarrowBold'
+    li
+      border-bottom 2px solid c_graylight2
+      margin-bottom 1em
+      padding-bottom 10px
+    p
+      font-size 85%
+      line-height 1.2
+      margin 0
